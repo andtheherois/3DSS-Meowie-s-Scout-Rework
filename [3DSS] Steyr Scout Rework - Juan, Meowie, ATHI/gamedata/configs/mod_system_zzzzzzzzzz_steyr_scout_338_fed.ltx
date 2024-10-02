@@ -1,0 +1,669 @@
+
+;-----------------------------------------------------------------------------
+;                             STEYR SCOUT Edits		
+;-----------------------------------------------------------------------------
+
+![wpn_steyr_scout]
+parent_section                           = wpn_steyr_scout
+!scope_zoom_factor               = 7.5
+!min_scope_zoom_factor			 = 30
+
+	!s3ds_reticle_size 	= 3.5
+	!s3ds_eye_relief 	= 4
+	!s3ds_exit_pupil		= 0.3
+	!s3ds_ffp			= 1	
+	!s3ds_min_zoom_fov 	= 32
+	!s3ds_max_zoom_fov 	= 5	
+	!magnification		= 16
+
+ammo_class                               = ammo_338_federal, ammo_338_federal_bad    
+ammo_current                             = 5
+ammo_elapsed                             = 0
+ammo_limit                               = 5
+ammo_mag_size                            = 5
+startup_ammo                             = 5
+
+silencer_name                            = wpn_sil_daniel
+silencer_status                          = 2
+silencer_x                               = 180
+silencer_y                               = 20.5
+
+hit_impulse                              = 80
+hit_power                                = 0.85, 0.85, 0.85, 0.85
+
+lewd_lens_hide_enabled                   = true		
+lewd_lens_hide_bone                      = lens
+lewd_lens_hide_delays                    = 0.1,0
+lewd_lens_hide_aim_mode                  = true, false, false
+
+scope_status                             = 0
+scopes 				                     = acog, triji, specter, spec_alt, susat, bravo4, hamr, leupold, mark8_rmr, marchf, pn23, march_f_shorty, march_f_shorty_alt, razorhd, gauss_sight
+scope_zoom_factor                        = 0
+scope_zoom_factor_alt                    = 0
+scope_texture                            =
+
+inv_weight                               = 3.55
+
+hud                                      = wpn_steyr_scout_hud
+visual                                   = dynamics\weapons\wpn_steyr_scout\wpn_steyr_scout_world.ogf
+
+        use_alt_aim_hud                  = true
+
+![wpn_steyr_scout_hud]
+item_visual                              = anomaly_weapons\wpn_steyr_scout\wpn_steyr_scout_big_hud.ogf
+        aim_hud_offset_alt_pos           = -0.047269, 0.015707, -0.044326
+        aim_hud_offset_alt_pos_16x9      = -0.047269, 0.015707, -0.044326
+        aim_hud_offset_alt_rot           = 0.003736, -0.020041, -0.0875
+        aim_hud_offset_alt_rot_16x9      = 0.003736, -0.020041, -0.0875
+        aim_hud_offset_pos               = -0.047685, 0.025614, -0.048657
+        aim_hud_offset_pos_16x9          = -0.047685, 0.025614, -0.048657
+        aim_hud_offset_rot               = 0.001356, -0.019349, -0.0875
+        aim_hud_offset_rot_16x9          = 0.001356, -0.019349, -0.0875
+        hands_orientation                = -1.147606, -0.045865, -5
+        hands_orientation_16x9           = -1.147606, -0.045865, -5
+        hands_position                   = -0.045262, -0.015365, -0.188216
+        hands_position_16x9              = -0.045262, -0.015365, -0.188216
+        lowered_hud_offset_pos           = 0.029398, -0.028312, -0.019862
+        lowered_hud_offset_pos_16x9      = 0.029398, -0.028312, -0.019862
+        lowered_hud_offset_rot           = -0.166452, -0.538982, 0.45
+        lowered_hud_offset_rot_16x9      = -0.166452, -0.538982, 0.45
+
+        fire_point                       = 0, 0.009, 0.224
+;-----------------------------------------------------------------------------
+;                          STEYR SCOUT New Scopes		
+;-----------------------------------------------------------------------------
+[wpn_steyr_scout_gauss_sight]:wpn_steyr_scout
+
+inv_weight                               = 5.0
+
+	s3ds_reticle_size 	= 5
+	s3ds_image_type 	= 2
+	s3ds_reticle_type 	= 6
+	ms_count 			= 2
+	magnification 		= 10
+
+hud                                      = wpn_steyr_scout_gauss_sight_hud
+visual                                   = dynamics\weapons\wpn_steyr_scout\wpn_steyr_scout_world.ogf
+
+scope_status                             = 1
+scope_zoom_factor                        = 12
+scope_dynamic_zoom                       = on
+zoom_rotate_time                         = 0.25
+
+[wpn_steyr_scout_gauss_sight_hud]:wpn_steyr_scout_hud
+item_visual                              = anomaly_weapons\wpn_steyr_scout\wpn_steyr_scout_big_gauss_hud.ogf                                                                                                                                                                                                                                                                                              
+        aim_hud_offset_alt_pos           = -0.052978, -0.004219, -0.06891
+        aim_hud_offset_alt_pos_16x9      = -0.052978, -0.004219, -0.06891
+        aim_hud_offset_alt_rot           = 0.03911, -0.020459, -0.0875
+        aim_hud_offset_alt_rot_16x9      = 0.03911, -0.020459, -0.0875
+        aim_hud_offset_pos               = -0.053057, 0.019277, -0.095697
+        aim_hud_offset_pos_16x9          = -0.053057, 0.019277, -0.095697
+        aim_hud_offset_rot               = 0.003753, -0.023508, -0.0875
+        aim_hud_offset_rot_16x9          = 0.003753, -0.023508, -0.0875
+        hands_orientation                = -1.134377, -0.040175, -5
+        hands_orientation_16x9           = -1.134377, -0.040175, -5
+        hands_position                   = -0.038819, -0.016998, -0.191979
+        hands_position_16x9              = -0.038819, -0.016998, -0.191979
+        lowered_hud_offset_pos           = 0.028336, -0.033282, -0.019862
+        lowered_hud_offset_pos_16x9      = 0.028336, -0.033282, -0.019862
+        lowered_hud_offset_rot           = -0.168156, -0.539725, 0.45
+        lowered_hud_offset_rot_16x9      = -0.168156, -0.539725, 0.45
+;-----------------------------------------------------------------------------
+
+[wpn_steyr_scout_pn23]:wpn_steyr_scout
+
+inv_weight                               = 4.35
+
+hud                                      = wpn_steyr_scout_pn23_hud
+visual                                   = dynamics\weapons\wpn_steyr_scout\wpn_steyr_scout_world.ogf
+
+	s3ds_reticle_size 	= 4.38	
+	s3ds_eye_relief 	= 1.98
+	s3ds_ffp			= 1	
+	s3ds_min_zoom_fov 	= 35
+	s3ds_max_zoom_fov 	= 28
+	s3ds_chroma_power	= 0.05	
+	s3ds_image_type 	= 1
+	s3ds_reticle_type	= 7
+	ms_count 			= 2
+	magnification 		= 6	
+
+scope_status                             = 1
+scope_zoom_factor                        = 30
+scope_dynamic_zoom                       = on
+zoom_rotate_time                         = 0.25
+
+[wpn_steyr_scout_pn23_hud]:wpn_steyr_scout_hud
+item_visual                              = anomaly_weapons\wpn_steyr_scout\wpn_steyr_scout_big_pn23_hud.ogf                                                                                                                                                                                                                                                                                              
+        aim_hud_offset_alt_pos           = -0.091429, -0.027643, -0.048972
+        aim_hud_offset_alt_pos_16x9      = -0.091429, -0.027643, -0.048972
+        aim_hud_offset_alt_rot           = -0.021263, -0.003294, 0.5
+        aim_hud_offset_alt_rot_16x9      = -0.021263, -0.003294, 0.5
+        aim_hud_offset_pos               = -0.056811, 0.016015, -0.130841
+        aim_hud_offset_pos_16x9          = -0.056811, 0.016015, -0.130841
+        aim_hud_offset_rot               = 0.003908, -0.023365, -0.0875
+        aim_hud_offset_rot_16x9          = 0.003908, -0.023365, -0.0875q
+        hands_orientation                = -1.11603, -0.03164, -5
+        hands_orientation_16x9           = -1.11603, -0.03164, -5
+        hands_position                   = -0.034127, -0.022894, -0.187009
+        hands_position_16x9              = -0.034127, -0.022894, -0.187009
+        lowered_hud_offset_pos           = 0.029769, -0.033566, -0.019862
+        lowered_hud_offset_pos_16x9      = 0.029769, -0.033566, -0.019862
+        lowered_hud_offset_rot           = -0.159849, -0.553259, 0.45
+        lowered_hud_offset_rot_16x9      = -0.159849, -0.553259, 0.45
+;-----------------------------------------------------------------------------
+
+[wpn_steyr_scout_acog]:wpn_steyr_scout
+
+inv_weight                               = 4.15
+
+hud                                      = wpn_steyr_scout_acog_hud
+visual                                   = dynamics\weapons\wpn_steyr_scout\wpn_steyr_scout_world.ogf
+
+	s3ds_reticle_size 	= 3.9
+	s3ds_eye_relief 	= 1.5
+	s3ds_exit_pupil		= 0.55	
+	s3ds_chroma_power	= 0.031	
+	s3ds_reticle_type 	= 3
+	magnification 		= 2.8	
+	
+scope_status                             = 1
+scope_zoom_factor                        = 30
+scope_dynamic_zoom                       = off
+zoom_rotate_time                         = 0.25
+
+[wpn_steyr_scout_acog_hud]:wpn_steyr_scout_hud
+item_visual                              = anomaly_weapons\wpn_steyr_scout\wpn_steyr_scout_big_acog_hud.ogf                                                                                                                                                                                                                                                                                              
+        aim_hud_offset_alt_pos           = -0.056003, -0.016768, -0.096991
+        aim_hud_offset_alt_pos_16x9      = -0.056003, -0.016768, -0.096991
+        aim_hud_offset_alt_rot           = 0.007357, -0.018238, -0.0875
+        aim_hud_offset_alt_rot_16x9      = 0.007357, -0.018238, -0.0875
+        aim_hud_offset_pos               = -0.055235, 0.011125, -0.137049
+        aim_hud_offset_pos_16x9          = -0.055235, 0.011125, -0.137049
+        aim_hud_offset_rot               = 0.010365, -0.021877, -0.0875
+        aim_hud_offset_rot_16x9          = 0.010365, -0.021877, -0.0875
+        hands_orientation                = -1.113897, -0.037899, -5
+        hands_orientation_16x9           = -1.113897, -0.037899, -5
+        hands_position                   = -0.03625, -0.01998, -0.186867
+        hands_position_16x9              = -0.03625, -0.01998, -0.186867
+        lowered_hud_offset_pos           = 0.030725, -0.032998, -0.019862
+        lowered_hud_offset_pos_16x9      = 0.030725, -0.032998, -0.019862
+        lowered_hud_offset_rot           = -0.16134, -0.544938, 0.45
+        lowered_hud_offset_rot_16x9      = -0.16134, -0.544938, 0.45
+;-----------------------------------------------------------------------------
+
+[wpn_steyr_scout_triji]:wpn_steyr_scout
+
+inv_weight                               = 4.275
+
+hud                                      = wpn_steyr_scout_triji_hud
+visual                                   = dynamics\weapons\wpn_steyr_scout\wpn_steyr_scout_world.ogf
+
+	s3ds_reticle_size 	= 3.9
+	s3ds_eye_relief 	= 1.5
+	s3ds_exit_pupil		= 0.55	
+	s3ds_chroma_power	= 0.031	
+	s3ds_reticle_type 	= 3
+	magnification 		= 2.8	
+
+scope_status                             = 1
+scope_zoom_factor                        = 30
+scope_dynamic_zoom                       = off
+zoom_rotate_time                         = 0.25
+
+[wpn_steyr_scout_triji_hud]:wpn_steyr_scout_hud
+item_visual                              = anomaly_weapons\wpn_steyr_scout\wpn_steyr_scout_big_trijicon_rmr_hud.ogf                                                                                                                                                                                                                                                                                          
+        aim_hud_offset_alt_pos           = -0.090988, -0.015265, -0.07341
+        aim_hud_offset_alt_pos_16x9      = -0.090988, -0.015265, -0.07341
+        aim_hud_offset_alt_rot           = -0.006206, -0.017706, 0.45
+        aim_hud_offset_alt_rot_16x9      = -0.006206, -0.017706, 0.45
+        aim_hud_offset_pos               = -0.055235, 0.011125, -0.137049
+        aim_hud_offset_pos_16x9          = -0.055235, 0.011125, -0.137049
+        aim_hud_offset_rot               = 0.010365, -0.021877, -0.0875
+        aim_hud_offset_rot_16x9          = 0.010365, -0.021877, -0.0875
+        hands_orientation                = -1.113897, -0.037899, -5
+        hands_orientation_16x9           = -1.113897, -0.037899, -5
+        hands_position                   = -0.03625, -0.01998, -0.186867
+        hands_position_16x9              = -0.03625, -0.01998, -0.186867
+        lowered_hud_offset_pos           = 0.030725, -0.032998, -0.019862
+        lowered_hud_offset_pos_16x9      = 0.030725, -0.032998, -0.019862
+        lowered_hud_offset_rot           = -0.16134, -0.544938, 0.45
+        lowered_hud_offset_rot_16x9      = -0.16134, -0.544938, 0.45
+;-----------------------------------------------------------------------------
+
+[wpn_steyr_scout_specter]:wpn_steyr_scout
+
+inv_weight                               = 4.205
+
+hud                                      = wpn_steyr_scout_specter_hud
+visual                                   = dynamics\weapons\wpn_steyr_scout\wpn_steyr_scout_world.ogf
+
+	s3ds_reticle_size 	= 4.5
+	s3ds_eye_relief 	= 2
+	s3ds_ffp			= 1
+	s3ds_min_zoom_fov 	= 56
+	s3ds_max_zoom_fov 	= 20
+	s3ds_chroma_power	= 0.04	
+	s3ds_reticle_type 	= 4
+	ms_count 			= 3
+	ms_colors			= scope_black, scope_red_dim, scope_red
+	magnification 		= 4	
+
+
+scope_status                             = 1
+scope_zoom_factor                        = 30
+scope_dynamic_zoom                       = on
+zoom_rotate_time                         = 0.25
+
+[wpn_steyr_scout_specter_hud]:wpn_steyr_scout_hud
+item_visual                              = anomaly_weapons\wpn_steyr_scout\wpn_steyr_scout_big_specter_hud.ogf                                                                                                                                                                                                                                                                                          
+        aim_hud_offset_alt_pos           = -0.057778, -0.015078, -0.071002
+        aim_hud_offset_alt_pos_16x9      = -0.057778, -0.015078, -0.071002
+        aim_hud_offset_alt_rot           = 0.003097, -0.020626, -0.0875
+        aim_hud_offset_alt_rot_16x9      = 0.003097, -0.020626, -0.0875
+        aim_hud_offset_pos               = -0.057193, 0.011565, -0.127415
+        aim_hud_offset_pos_16x9          = -0.057193, 0.011565, -0.127415
+        aim_hud_offset_rot               = 0.004415, -0.023673, -0.0875
+        aim_hud_offset_rot_16x9          = 0.004415, -0.023673, -0.0875
+        hands_orientation                = -1.147605, -0.045865, -5
+        hands_orientation_16x9           = -1.147605, -0.045865, -5
+        hands_position                   = -0.033922, -0.021684, -0.188216
+        hands_position_16x9              = -0.033922, -0.021684, -0.188216
+        lowered_hud_offset_pos           = 0.028655, -0.031223, -0.019862
+        lowered_hud_offset_pos_16x9      = 0.028655, -0.031223, -0.019862
+        lowered_hud_offset_rot           = -0.147414, -0.545204, 0.45
+        lowered_hud_offset_rot_16x9      = -0.147414, -0.545204, 0.45
+;-----------------------------------------------------------------------------
+
+[wpn_steyr_scout_spec_alt]:wpn_steyr_scout
+
+inv_weight                               = 4.25
+
+hud                                      = wpn_steyr_scout_spec_alt_hud
+visual                                   = dynamics\weapons\wpn_steyr_scout\wpn_steyr_scout_world.ogf
+
+	s3ds_reticle_size 	= 4.5
+	s3ds_eye_relief 	= 2
+	s3ds_ffp			= 1
+	s3ds_min_zoom_fov 	= 56
+	s3ds_max_zoom_fov 	= 20
+	s3ds_chroma_power	= 0.04	
+	s3ds_reticle_type 	= 4
+	ms_count 			= 3
+	ms_colors			= scope_black, scope_red_dim, scope_red
+	magnification 		= 4	
+
+
+scope_status                             = 1
+scope_zoom_factor                        = 30
+scope_dynamic_zoom                       = on
+zoom_rotate_time                         = 0.25
+
+[wpn_steyr_scout_spec_alt_hud]:wpn_steyr_scout_hud
+item_visual                              = anomaly_weapons\wpn_steyr_scout\wpn_steyr_scout_big_spec_alt_hud.ogf                                                                                                                                                                                                                                                                                          
+        aim_hud_offset_alt_pos           = -0.057991, -0.018841, -0.071002
+        aim_hud_offset_alt_pos_16x9      = -0.057991, -0.018841, -0.071002
+        aim_hud_offset_alt_rot           = 0.003097, -0.020625, -0.0875
+        aim_hud_offset_alt_rot_16x9      = 0.003097, -0.020625, -0.0875
+        aim_hud_offset_pos               = -0.057193, 0.011565, -0.127415
+        aim_hud_offset_pos_16x9          = -0.057193, 0.011565, -0.127415
+        aim_hud_offset_rot               = 0.004415, -0.023673, -0.0875
+        aim_hud_offset_rot_16x9          = 0.004415, -0.023673, -0.0875
+        hands_orientation                = -1.147605, -0.045865, -5
+        hands_orientation_16x9           = -1.147605, -0.045865, -5
+        hands_position                   = -0.033922, -0.021684, -0.188216
+        hands_position_16x9              = -0.033922, -0.021684, -0.188216
+        lowered_hud_offset_pos           = 0.028655, -0.031223, -0.019862
+        lowered_hud_offset_pos_16x9      = 0.028655, -0.031223, -0.019862
+        lowered_hud_offset_rot           = -0.147414, -0.545204, 0.45
+        lowered_hud_offset_rot_16x9      = -0.147414, -0.545204, 0.45
+;-----------------------------------------------------------------------------
+
+[wpn_steyr_scout_susat]:wpn_steyr_scout
+
+inv_weight                               = 4.05
+
+hud                                      = wpn_steyr_scout_susat_hud
+visual                                   = dynamics\weapons\wpn_steyr_scout\wpn_steyr_scout_world.ogf
+
+	s3ds_reticle_size 	= 3.7
+	s3ds_eye_relief 	= 2.35
+	magnification 		= 4
+
+scope_status                             = 1
+scope_zoom_factor                        = 30
+scope_dynamic_zoom                       = off
+zoom_rotate_time                         = 0.25
+
+[wpn_steyr_scout_susat_hud]:wpn_steyr_scout_hud
+item_visual                              = anomaly_weapons\wpn_steyr_scout\wpn_steyr_scout_big_susat_hud.ogf 
+        aim_hud_offset_alt_pos           = -0.058201, -0.020047, -0.085631
+        aim_hud_offset_alt_pos_16x9      = -0.058201, -0.020047, -0.085631
+        aim_hud_offset_alt_rot           = 0.00544, -0.019565, -0.0875
+        aim_hud_offset_alt_rot_16x9      = 0.00544, -0.019565, -0.0875
+        aim_hud_offset_pos               = -0.057234, -0.001666, -0.13849
+        aim_hud_offset_pos_16x9          = -0.057234, -0.001666, -0.13849
+        aim_hud_offset_rot               = 0.003652, -0.023798, -0.0875
+        aim_hud_offset_rot_16x9          = 0.003652, -0.023798, -0.0875
+        hands_orientation                = -1.147605, -0.045865, -5
+        hands_orientation_16x9           = -1.147605, -0.045865, -5
+        hands_position                   = -0.033922, -0.021684, -0.188216
+        hands_position_16x9              = -0.033922, -0.021684, -0.188216
+        lowered_hud_offset_pos           = 0.028655, -0.031223, -0.019862
+        lowered_hud_offset_pos_16x9      = 0.028655, -0.031223, -0.019862
+        lowered_hud_offset_rot           = -0.147414, -0.545204, 0.45
+        lowered_hud_offset_rot_16x9      = -0.147414, -0.545204, 0.45
+;-----------------------------------------------------------------------------
+
+[wpn_steyr_scout_hamr]:wpn_steyr_scout
+
+inv_weight                               = 3.975
+
+hud                                      = wpn_steyr_scout_hamr_hud
+visual                                   = dynamics\weapons\wpn_steyr_scout\wpn_steyr_scout_world.ogf
+
+	s3ds_reticle_size 	= 4.3
+	s3ds_eye_relief 	= 1.9
+	s3ds_exit_pupil		= 0.35
+	s3ds_chroma_power	= 0.035
+	magnification 		= 4
+
+scope_status                             = 1
+scope_zoom_factor                        = 30
+scope_dynamic_zoom                       = off
+zoom_rotate_time                         = 0.25
+
+[wpn_steyr_scout_hamr_hud]:wpn_steyr_scout_hud
+item_visual                              = anomaly_weapons\wpn_steyr_scout\wpn_steyr_scout_big_hamr_hud.ogf                                                                                                                                                                                                                                                                                          
+        aim_hud_offset_alt_pos           = -0.057991, -0.013161, -0.091756
+        aim_hud_offset_alt_pos_16x9      = -0.057991, -0.013161, -0.091756
+        aim_hud_offset_alt_rot           = 0.022693, -0.019507, -0.0875
+        aim_hud_offset_alt_rot_16x9      = 0.022693, -0.019507, -0.0875
+        aim_hud_offset_pos               = -0.057337, 0.01069, -0.135357
+        aim_hud_offset_pos_16x9          = -0.057337, 0.01069, -0.135357
+        aim_hud_offset_rot               = 0.003663, -0.023936, -0.0875
+        aim_hud_offset_rot_16x9          = 0.003663, -0.023936, -0.0875
+        hands_orientation                = -1.147605, -0.045865, -5
+        hands_orientation_16x9           = -1.147605, -0.045865, -5
+        hands_position                   = -0.033922, -0.021684, -0.188216
+        hands_position_16x9              = -0.033922, -0.021684, -0.188216
+        lowered_hud_offset_pos           = 0.028549, -0.033211, -0.019862
+        lowered_hud_offset_pos_16x9      = 0.028549, -0.033211, -0.019862
+        lowered_hud_offset_rot           = -0.143438, -0.547596, 0.45
+        lowered_hud_offset_rot_16x9      = -0.143438, -0.547596, 0.45
+;-----------------------------------------------------------------------------
+
+[wpn_steyr_scout_bravo4]:wpn_steyr_scout
+
+inv_weight                               = 4.05
+
+hud                                      = wpn_steyr_scout_bravo4_hud
+visual                                   = dynamics\weapons\wpn_steyr_scout\wpn_steyr_scout_world.ogf
+
+	s3ds_reticle_size 	= 4.1
+	s3ds_eye_relief 	= 2
+	s3ds_exit_pupil		= 0.35	
+	magnification 		= 4
+
+scope_status                             = 1
+scope_zoom_factor                        = 30
+scope_texture                            =
+scope_dynamic_zoom                       = off
+zoom_rotate_time                         = 0.25
+
+[wpn_steyr_scout_bravo4_hud]:wpn_steyr_scout_hud
+item_visual                              = anomaly_weapons\wpn_steyr_scout\wpn_steyr_scout_big_bravo4_hud.ogf                                                                                                                                                                                                                                                                                          
+        aim_hud_offset_alt_pos           = -0.091098, -0.038783, -0.035915
+        aim_hud_offset_alt_pos_16x9      = -0.091098, -0.038783, -0.035915
+        aim_hud_offset_alt_rot           = -0.021053, -0.005139, 0.5
+        aim_hud_offset_alt_rot_16x9      = -0.021053, -0.005139, 0.5
+        aim_hud_offset_pos               = -0.057468, 0.015697, -0.105616
+        aim_hud_offset_pos_16x9          = -0.057468, 0.015697, -0.105616
+        aim_hud_offset_rot               = 0.003267, -0.023432, -0.0875
+        aim_hud_offset_rot_16x9          = 0.003267, -0.023432, -0.0875
+        hands_orientation                = -1.147605, -0.045865, -5
+        hands_orientation_16x9           = -1.147605, -0.045865, -5
+        hands_position                   = -0.033922, -0.021684, -0.188216
+        hands_position_16x9              = -0.033922, -0.021684, -0.188216
+        lowered_hud_offset_pos           = 0.028549, -0.033211, -0.019862
+        lowered_hud_offset_pos_16x9      = 0.028549, -0.033211, -0.019862
+        lowered_hud_offset_rot           = -0.143438, -0.547596, 0.45
+        lowered_hud_offset_rot_16x9      = -0.143438, -0.547596, 0.45
+;-----------------------------------------------------------------------------
+
+[wpn_steyr_scout_leupold]:wpn_steyr_scout
+
+inv_weight                               = 4.2
+
+hud                                      = wpn_steyr_scout_leupold_hud
+visual                                   = dynamics\weapons\wpn_steyr_scout\wpn_steyr_scout_world.ogf
+
+	s3ds_reticle_size 	= 4.35
+	s3ds_eye_relief 	= 4
+	s3ds_exit_pupil		= 0.4	
+	s3ds_ffp			= 1	
+	s3ds_min_zoom_fov 	= 35
+	s3ds_max_zoom_fov 	= 28
+	magnification 		= 8
+
+scope_status                             = 1
+scope_zoom_factor                        = 20
+scope_texture                            = 
+scope_dynamic_zoom                       = on
+zoom_rotate_time                         = 0.25
+
+[wpn_steyr_scout_leupold_hud]:wpn_steyr_scout_hud
+item_visual                              = anomaly_weapons\wpn_steyr_scout\wpn_steyr_scout_big_leupold_hud.ogf
+        aim_hud_offset_alt_pos           = -0.073779, -0.057851, -0.046598
+        aim_hud_offset_alt_pos_16x9      = -0.073779, -0.057851, -0.046598
+        aim_hud_offset_alt_rot           = -0.026991, -0.016331, 0.35
+        aim_hud_offset_alt_rot_16x9      = -0.026991, -0.016331, 0.35
+        aim_hud_offset_pos               = -0.059573, 0.019257, -0.052836
+        aim_hud_offset_pos_16x9          = -0.059573, 0.019257, -0.052836
+        aim_hud_offset_rot               = 0.004298, -0.023607, -0.0875
+        aim_hud_offset_rot_16x9          = 0.004298, -0.023607, -0.0875
+        hands_orientation                = -1.147605, -0.045865, -5
+        hands_orientation_16x9           = -1.147605, -0.045865, -5
+        hands_position                   = -0.031963, -0.022252, -0.190133
+        hands_position_16x9              = -0.031963, -0.022252, -0.190133
+        lowered_hud_offset_pos           = 0.027164, -0.041376, -0.0254
+        lowered_hud_offset_pos_16x9      = 0.027164, -0.041376, -0.0254
+        lowered_hud_offset_rot           = -0.167161, -0.539026, 0.45
+        lowered_hud_offset_rot_16x9      = -0.167161, -0.539026, 0.45
+;-----------------------------------------------------------------------------
+
+[wpn_steyr_scout_mark8_rmr]:wpn_steyr_scout
+
+inv_weight                               = 4.3
+
+hud                                      = wpn_steyr_scout_mark8_rmr_hud
+visual                                   = dynamics\weapons\wpn_steyr_scout\wpn_steyr_scout_world.ogf
+
+	s3ds_reticle_size 	= 4.35
+	s3ds_eye_relief 	= 4
+	s3ds_exit_pupil		= 0.4	
+	s3ds_ffp			= 1	
+	s3ds_min_zoom_fov 	= 35
+	s3ds_max_zoom_fov 	= 28
+	magnification 		= 8
+scope_status                             = 1
+scope_zoom_factor                        = 20
+scope_texture                            =
+scope_dynamic_zoom                       = on
+zoom_rotate_time                         = 0.25
+
+[wpn_steyr_scout_mark8_rmr_hud]:wpn_steyr_scout_hud
+item_visual                              = anomaly_weapons\wpn_steyr_scout\wpn_steyr_scout_big_mark8_rmr_hud.ogf
+        aim_hud_offset_alt_pos           = -0.060309, -0.020587, -0.050716
+        aim_hud_offset_alt_pos_16x9      = -0.060309, -0.020587, -0.050716
+        aim_hud_offset_alt_rot           = 0.016019, -0.019244, -0.0875
+        aim_hud_offset_alt_rot_16x9      = 0.016019, -0.019244, -0.0875
+        aim_hud_offset_pos               = -0.059573, 0.019257, -0.052836
+        aim_hud_offset_pos_16x9          = -0.059573, 0.019257, -0.052836
+        aim_hud_offset_rot               = 0.004298, -0.023607, -0.0875
+        aim_hud_offset_rot_16x9          = 0.004298, -0.023607, -0.0875
+        hands_orientation                = -1.147605, -0.045865, -5
+        hands_orientation_16x9           = -1.147605, -0.045865, -5
+        hands_position                   = -0.031963, -0.022252, -0.190133
+        hands_position_16x9              = -0.031963, -0.022252, -0.190133
+        lowered_hud_offset_pos           = 0.027164, -0.041376, -0.0254
+        lowered_hud_offset_pos_16x9      = 0.027164, -0.041376, -0.0254
+        lowered_hud_offset_rot           = -0.167161, -0.539026, 0.45
+        lowered_hud_offset_rot_16x9      = -0.167161, -0.539026, 0.45
+;-----------------------------------------------------------------------------
+
+[wpn_steyr_scout_marchf]:wpn_steyr_scout
+
+inv_weight                               = 4.3
+
+hud                                      = wpn_steyr_scout_marchf_hud
+visual                                   = dynamics\weapons\wpn_steyr_scout\wpn_steyr_scout_world.ogf
+
+	s3ds_reticle_size 	= 4.9
+	s3ds_eye_relief 	= 3.1
+	s3ds_ffp			= 1	
+	s3ds_min_zoom_fov 	= 10
+	s3ds_max_zoom_fov 	= 5
+	s3ds_reticle_type 	= 2
+	ms_count 			= 2
+	ms_colors 			= scope_black, scope_red	
+	magnification 		= 24
+
+scope_status                             = 1
+scope_zoom_factor                        = 15
+scope_texture                            =
+scope_dynamic_zoom                       = on
+zoom_rotate_time                         = 0.25
+
+[wpn_steyr_scout_marchf_hud]:wpn_steyr_scout_hud
+item_visual                              = anomaly_weapons\wpn_steyr_scout\wpn_steyr_scout_big_marchf_hud.ogf
+        aim_hud_offset_alt_pos           = -0.069979, -0.05167, -0.047219
+        aim_hud_offset_alt_pos_16x9      = -0.069979, -0.05167, -0.047219
+        aim_hud_offset_alt_rot           = -0.02739, -0.024291, 0.35
+        aim_hud_offset_alt_rot_16x9      = -0.02739, -0.024291, 0.35
+        aim_hud_offset_pos               = -0.059902, 0.019206, -0.079135
+        aim_hud_offset_pos_16x9          = -0.059902, 0.019206, -0.079135
+        aim_hud_offset_rot               = 0.003999, -0.023095, -0.0875
+        aim_hud_offset_rot_16x9          = 0.003999, -0.023095, -0.0875
+        hands_orientation                = -1.147605, -0.045865, -5
+        hands_orientation_16x9           = -1.147605, -0.045865, -5
+        hands_position                   = -0.031963, -0.022252, -0.190133
+        hands_position_16x9              = -0.031963, -0.022252, -0.190133
+        lowered_hud_offset_pos           = 0.027271, -0.040453, -0.0254
+        lowered_hud_offset_pos_16x9      = 0.027271, -0.040453, -0.0254
+        lowered_hud_offset_rot           = -0.174901, -0.536322, 0.45
+        lowered_hud_offset_rot_16x9      = -0.174901, -0.536322, 0.45
+;-----------------------------------------------------------------------------
+
+[wpn_steyr_scout_march_f_shorty]:wpn_steyr_scout
+
+inv_weight                               = 4.05
+
+hud                                      = wpn_steyr_scout_march_f_shorty_hud
+visual                                   = dynamics\weapons\wpn_steyr_scout\wpn_steyr_scout_world.ogf
+
+	s3ds_eye_relief 	= 4.5
+	s3ds_exit_pupil		= 0.5	
+	s3ds_chroma_power	= 0		
+	magnification 		= 8
+
+scope_status                             = 1
+scope_zoom_factor                        = 20
+scope_texture                            =
+scope_dynamic_zoom                       = on
+zoom_rotate_time                         = 0.25
+
+[wpn_steyr_scout_march_f_shorty_hud]:wpn_steyr_scout_hud
+item_visual                              = anomaly_weapons\wpn_steyr_scout\wpn_steyr_scout_big_march_f_shorty_hud.ogf
+        aim_hud_offset_alt_pos           = -0.073453, -0.052786, -0.053311
+        aim_hud_offset_alt_pos_16x9      = -0.073453, -0.052786, -0.053311
+        aim_hud_offset_alt_rot           = -0.026663, -0.017693, 0.35
+        aim_hud_offset_alt_rot_16x9      = -0.026663, -0.017693, 0.35
+        aim_hud_offset_pos               = -0.060741, 0.02017, -0.065354
+        aim_hud_offset_pos_16x9          = -0.060741, 0.02017, -0.065354
+        aim_hud_offset_rot               = 0.001337, -0.02163, -0.0875
+        aim_hud_offset_rot_16x9          = 0.001337, -0.02163, -0.0875
+        hands_orientation                = -1.015768, -0.183519, -5
+        hands_orientation_16x9           = -1.015768, -0.183519, -5
+        hands_position                   = -0.029934, -0.024456, -0.180335
+        hands_position_16x9              = -0.029934, -0.024456, -0.180335
+        lowered_hud_offset_pos           = 0.029133, -0.036264, -0.017448
+        lowered_hud_offset_pos_16x9      = 0.029133, -0.036264, -0.017448
+        lowered_hud_offset_rot           = -0.160559, -0.553365, 0.45
+        lowered_hud_offset_rot_16x9      = -0.160559, -0.553365, 0.45
+;-----------------------------------------------------------------------------
+
+[wpn_steyr_scout_march_f_shorty_alt]:wpn_steyr_scout
+
+inv_weight                               = 4.15
+
+hud                                      = wpn_steyr_scout_march_f_shorty_alt_hud
+visual                                   = dynamics\weapons\wpn_steyr_scout\wpn_steyr_scout_world.ogf
+
+	s3ds_eye_relief 	= 4.5
+	s3ds_exit_pupil		= 0.5	
+	s3ds_chroma_power	= 0		
+	magnification 		= 8
+
+scope_status                             = 1
+scope_zoom_factor                        = 20
+scope_texture                            =
+scope_dynamic_zoom                       = on
+zoom_rotate_time                         = 0.25
+
+[wpn_steyr_scout_march_f_shorty_alt_hud]:wpn_steyr_scout_hud
+item_visual                              = anomaly_weapons\wpn_steyr_scout\wpn_steyr_scout_big_march_f_shorty_alt_hud.ogf
+        aim_hud_offset_alt_pos           = -0.073453, -0.052786, -0.053311
+        aim_hud_offset_alt_pos_16x9      = -0.073453, -0.052786, -0.053311
+        aim_hud_offset_alt_rot           = -0.026663, -0.017693, 0.35
+        aim_hud_offset_alt_rot_16x9      = -0.026663, -0.017693, 0.35
+        aim_hud_offset_pos               = -0.060741, 0.02017, -0.065354
+        aim_hud_offset_pos_16x9          = -0.060741, 0.02017, -0.065354
+        aim_hud_offset_rot               = 0.001337, -0.02163, -0.0875
+        aim_hud_offset_rot_16x9          = 0.001337, -0.02163, -0.0875
+        hands_orientation                = -1.015768, -0.183519, -5
+        hands_orientation_16x9           = -1.015768, -0.183519, -5
+        hands_position                   = -0.029934, -0.024456, -0.180335
+        hands_position_16x9              = -0.029934, -0.024456, -0.180335
+        lowered_hud_offset_pos           = 0.029133, -0.036264, -0.017448
+        lowered_hud_offset_pos_16x9      = 0.029133, -0.036264, -0.017448
+        lowered_hud_offset_rot           = -0.160559, -0.553365, 0.45
+        lowered_hud_offset_rot_16x9      = -0.160559, -0.553365, 0.45
+;-----------------------------------------------------------------------------
+
+[wpn_steyr_scout_razorhd]:wpn_steyr_scout
+
+inv_weight                               = 4.3
+
+hud                                      = wpn_steyr_scout_razorhd_hud
+visual                                   = dynamics\weapons\wpn_steyr_scout\wpn_steyr_scout_world.ogf
+
+	s3ds_reticle_size 	= 4.1
+	s3ds_eye_relief 	= 2.3
+	s3ds_chroma_power	= 0		
+	magnification 		= 6
+
+scope_status                             = 1
+scope_zoom_factor                        = 20
+scope_texture                            =
+scope_dynamic_zoom                       = on
+zoom_rotate_time                         = 0.25
+
+[wpn_steyr_scout_razorhd_hud]:wpn_steyr_scout_hud
+item_visual                              = anomaly_weapons\wpn_steyr_scout\wpn_steyr_scout_big_razorhd_hud.ogf
+        aim_hud_offset_alt_pos           = -0.093947, -0.006371, -0.053628
+        aim_hud_offset_alt_pos_16x9      = -0.093947, -0.006371, -0.053628
+        aim_hud_offset_alt_rot           = 0.004448, -0.012224, 0.45
+        aim_hud_offset_alt_rot_16x9      = 0.004448, -0.012224, 0.45
+        aim_hud_offset_pos               = -0.059677, 0.019256, -0.059734
+        aim_hud_offset_pos_16x9          = -0.059677, 0.019256, -0.059734
+        aim_hud_offset_rot               = 0.003598, -0.023139, -0.0875
+        aim_hud_offset_rot_16x9          = 0.003598, -0.023139, -0.0875
+        hands_orientation                = -1.147605, -0.045865, -5
+        hands_orientation_16x9           = -1.147605, -0.045865, -5
+        hands_position                   = -0.031963, -0.022252, -0.190133
+        hands_position_16x9              = -0.031963, -0.022252, -0.190133
+        lowered_hud_offset_pos           = 0.027164, -0.041376, -0.0254
+        lowered_hud_offset_pos_16x9      = 0.027164, -0.041376, -0.0254
+        lowered_hud_offset_rot           = -0.167161, -0.539026, 0.45
+        lowered_hud_offset_rot_16x9      = -0.167161, -0.539026, 0.45   

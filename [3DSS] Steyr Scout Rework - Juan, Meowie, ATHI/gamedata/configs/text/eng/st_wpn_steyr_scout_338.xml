@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<string_table>
+
+<string id="st_wpn_steyr_scout">
+		<text>Steyr Scout .338 Federal</text>
+	</string>
+	<string id="st_wpn_steyr_scout_descr">
+		<text>The Steyr Scout sniper rifle is a highly regarded firearm known for its precision and adaptability. Chambered in the powerful .338 Federal ammunition, this rifle combines formidable stopping power with impressive accuracy, making it a favorite among marksmen and military professionals. Its ergonomic design and lightweight construction allow for easy handling and swift target acquisition, ensuring effectiveness in various tactical situations. The Steyr Scout's robust build guarantees durability and reliability in the harshest environments, making it a trusted choice for snipers and sharpshooters. With its .338 Federal chambering, it delivers excellent long-range performance, making it ideal for engaging targets at extended distances with high accuracy and lethal impact. \n \n
+				%c[ui_gray_2]ATTACHMENTS: \n
+        %c[d_purple] - %c[ui_gray_2] Daniel Defence Wave QD suppressor. \n \n</text>
+	</string>
+
+</string_table>
