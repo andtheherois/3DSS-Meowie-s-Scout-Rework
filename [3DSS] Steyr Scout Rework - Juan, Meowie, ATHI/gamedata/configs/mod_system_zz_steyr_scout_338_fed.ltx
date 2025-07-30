@@ -5,7 +5,7 @@
 ![wpn_steyr_scout]
 parent_section                           = wpn_steyr_scout
 
-ammo_class                               = ammo_338_federal 
+ammo_class                               = ammo_338_federal, ammo_338_federal_bad
 ammo_current                             = 5
 ammo_elapsed                             = 0
 ammo_limit                               = 5
@@ -54,7 +54,7 @@ item_visual                              = anomaly_weapons\wpn_steyr_scout\wpn_s
         lowered_hud_offset_rot           = -0.166452, -0.538982, 0.45
         lowered_hud_offset_rot_16x9      = -0.166452, -0.538982, 0.45
 
-        fire_point                       = 0, 0.009, 0.224
+        fire_point                       = -0.001, -0.0005, 0.285
 ;-----------------------------------------------------------------------------
 ;                          STEYR SCOUT New Scopes		
 ;-----------------------------------------------------------------------------
@@ -70,12 +70,13 @@ scope_zoom_factor                        = 12
 scope_dynamic_zoom                       = on
 zoom_rotate_time                         = 0.25
 
+use_alt_aim_hud							 = true
 [wpn_steyr_scout_gauss_sight_hud]:wpn_steyr_scout_hud
 item_visual                              = anomaly_weapons\wpn_steyr_scout\wpn_steyr_scout_big_gauss_hud.ogf                                                                                                                                                                                                                                                                                              
-        aim_hud_offset_alt_pos           = -0.052978, -0.004219, -0.06891
-        aim_hud_offset_alt_pos_16x9      = -0.052978, -0.004219, -0.06891
-        aim_hud_offset_alt_rot           = 0.03911, -0.020459, -0.0875
-        aim_hud_offset_alt_rot_16x9      = 0.03911, -0.020459, -0.0875
+        aim_hud_offset_alt_pos           = -0.054315, -0.015222, -0.06891
+        aim_hud_offset_alt_pos_16x9      = -0.054315, -0.015222, -0.06891
+        aim_hud_offset_alt_rot           = -0.002192, -0.019117, -0.0875
+        aim_hud_offset_alt_rot_16x9      = -0.002192, -0.019117, -0.0875
 		
         aim_hud_offset_pos               = -0.053057, 0.019277, -0.095697
         aim_hud_offset_pos_16x9          = -0.053057, 0.019277, -0.095697
@@ -107,10 +108,10 @@ zoom_rotate_time                         = 0.25
 use_alt_aim_hud                  = true
 [wpn_steyr_scout_pn23_hud]:wpn_steyr_scout_hud
 item_visual                              = anomaly_weapons\wpn_steyr_scout\wpn_steyr_scout_big_pn23_hud.ogf                                                                                                                                                                                                                                                                                              
-        aim_hud_offset_alt_pos           = -0.095478, -0.026458, -0.048972
-        aim_hud_offset_alt_pos_16x9      = -0.095478, -0.026458, -0.048972
-        aim_hud_offset_alt_rot           = -0.021263, -0.003294, 0.5
-        aim_hud_offset_alt_rot_16x9      = -0.021263, -0.003294, 0.5
+        aim_hud_offset_alt_pos           = -0.094476, -0.016823, -0.048972
+        aim_hud_offset_alt_pos_16x9      = -0.094476, -0.016823, -0.048972
+        aim_hud_offset_alt_rot           = -0.001793, -0.018059, 0.5
+        aim_hud_offset_alt_rot_16x9      = -0.001793, -0.018059, 0.5
 		
         aim_hud_offset_pos               = -0.056811, 0.016015, -0.130841
         aim_hud_offset_pos_16x9          = -0.056811, 0.016015, -0.130841
@@ -177,15 +178,15 @@ zoom_rotate_time                         = 0.25
 use_alt_aim_hud                  = true
 [wpn_steyr_scout_triji_hud]:wpn_steyr_scout_hud
 item_visual                              = anomaly_weapons\wpn_steyr_scout\wpn_steyr_scout_big_trijicon_rmr_hud.ogf                                                                                                                                                                                                                                                                                          
-        aim_hud_offset_alt_pos           = -0.090988, -0.015265, -0.07341
-        aim_hud_offset_alt_pos_16x9      = -0.090988, -0.015265, -0.07341
-        aim_hud_offset_alt_rot           = -0.006206, -0.017706, 0.45
-        aim_hud_offset_alt_rot_16x9      = -0.006206, -0.017706, 0.45
+        aim_hud_offset_alt_pos           = -0.091836, -0.013277, -0.07341
+        aim_hud_offset_alt_pos_16x9      = -0.091836, -0.013277, -0.07341
+        aim_hud_offset_alt_rot           = -0.000564, -0.01877, 0.45
+        aim_hud_offset_alt_rot_16x9      = -0.000564, -0.01877, 0.45
 		
-        aim_hud_offset_pos               = -0.055235, 0.011125, -0.137049
-        aim_hud_offset_pos_16x9          = -0.055235, 0.011125, -0.137049
-        aim_hud_offset_rot               = 0.010365, -0.021877, -0.0875
-        aim_hud_offset_rot_16x9          = 0.010365, -0.021877, -0.0875
+        aim_hud_offset_pos               = -0.055157, 0.011323, -0.13636
+        aim_hud_offset_pos_16x9          = -0.055157, 0.011323, -0.13636
+        aim_hud_offset_rot               = 0.010904, -0.022085, -0.0875
+        aim_hud_offset_rot_16x9          = 0.010904, -0.022085, -0.0875
 		
         hands_orientation                = -1.113897, -0.037899, -5
         hands_orientation_16x9           = -1.113897, -0.037899, -5
@@ -250,20 +251,20 @@ scope_status                             = 1
 scope_zoom_factor                        = 30
 scope_dynamic_zoom                       = on
 zoom_rotate_time                         = 0.25
-zoom_step_count = 1
+zoom_step_count 						 = 1
 
 use_alt_aim_hud                  = true
 [wpn_steyr_scout_spec_alt_hud]:wpn_steyr_scout_hud
 item_visual                              = anomaly_weapons\wpn_steyr_scout\wpn_steyr_scout_big_spec_alt_hud.ogf                                                                                                                                                                                                                                                                                          
-        aim_hud_offset_alt_pos           = -0.057991, -0.018841, -0.071002
-        aim_hud_offset_alt_pos_16x9      = -0.057991, -0.018841, -0.071002
-        aim_hud_offset_alt_rot           = 0.003097, -0.020625, -0.0875
-        aim_hud_offset_alt_rot_16x9      = 0.003097, -0.020625, -0.0875
+        aim_hud_offset_alt_pos           = -0.058097, -0.021113, -0.071002
+        aim_hud_offset_alt_pos_16x9      = -0.058097, -0.021113, -0.071002
+        aim_hud_offset_alt_rot           = -0.001944, -0.0202, -0.0875
+        aim_hud_offset_alt_rot_16x9      = -0.001944, -0.0202, -0.0875
 		
-        aim_hud_offset_pos               = -0.057193, 0.011565, -0.125933
-        aim_hud_offset_pos_16x9          = -0.057193, 0.011565, -0.125933
-        aim_hud_offset_rot               = 0.004415, -0.023673, -0.0875
-        aim_hud_offset_rot_16x9          = 0.004415, -0.023673, -0.0875
+        aim_hud_offset_pos               = -0.057193, 0.011439, -0.124099
+        aim_hud_offset_pos_16x9          = -0.057193, 0.011439, -0.124099
+        aim_hud_offset_rot               = 0.003983, -0.023634, -0.0875
+        aim_hud_offset_rot_16x9          = 0.003983, -0.023634, -0.0875
 		
         hands_orientation                = -1.147605, -0.045865, -5
         hands_orientation_16x9           = -1.147605, -0.045865, -5
@@ -327,18 +328,21 @@ zoom_rotate_time                         = 0.25
 use_alt_aim_hud                  = true
 [wpn_steyr_scout_hamr_hud]:wpn_steyr_scout_hud
 item_visual                              = anomaly_weapons\wpn_steyr_scout\wpn_steyr_scout_big_hamr_hud.ogf                                                                                                                                                                                                                                                                                          
-        aim_hud_offset_alt_pos           = -0.057991, -0.013161, -0.091756
-        aim_hud_offset_alt_pos_16x9      = -0.057991, -0.013161, -0.091756
-        aim_hud_offset_alt_rot           = 0.022693, -0.019507, -0.0875
-        aim_hud_offset_alt_rot_16x9      = 0.022693, -0.019507, -0.0875
-        aim_hud_offset_pos               = -0.057337, 0.01069, -0.135357
-        aim_hud_offset_pos_16x9          = -0.057337, 0.01069, -0.135357
+        aim_hud_offset_alt_pos           = -0.058553, -0.021291, -0.091756
+        aim_hud_offset_alt_pos_16x9      = -0.058553, -0.021291, -0.091756
+        aim_hud_offset_alt_rot           = -0.002149, -0.019803, -0.0875
+        aim_hud_offset_alt_rot_16x9      = -0.002149, -0.019803, -0.0875
+		
+        aim_hud_offset_pos               = -0.057814, 0.006004, -0.135357
+        aim_hud_offset_pos_16x9          = -0.057814, 0.006004, -0.135357
         aim_hud_offset_rot               = 0.003663, -0.023936, -0.0875
         aim_hud_offset_rot_16x9          = 0.003663, -0.023936, -0.0875
+		
         hands_orientation                = -1.147605, -0.045865, -5
         hands_orientation_16x9           = -1.147605, -0.045865, -5
         hands_position                   = -0.033922, -0.021684, -0.188216
         hands_position_16x9              = -0.033922, -0.021684, -0.188216
+		
         lowered_hud_offset_pos           = 0.028549, -0.033211, -0.019862
         lowered_hud_offset_pos_16x9      = 0.028549, -0.033211, -0.019862
         lowered_hud_offset_rot           = -0.143438, -0.547596, 0.45
@@ -359,11 +363,16 @@ zoom_rotate_time                         = 0.25
 
 use_alt_aim_hud                  = true
 [wpn_steyr_scout_bravo4_hud]:wpn_steyr_scout_hud
-item_visual                              = anomaly_weapons\wpn_steyr_scout\wpn_steyr_scout_big_bravo4_hud.ogf                                                                                                                                                                                                                                                                                          
-        aim_hud_offset_alt_pos           = -0.055428, -0.030467, -0.105616
-        aim_hud_offset_alt_pos_16x9      = -0.055428, -0.030467, -0.105616
-        aim_hud_offset_alt_rot           = -0.022544, -0.032709, -0.0875
-        aim_hud_offset_alt_rot_16x9      = -0.022544, -0.032709, -0.0875
+item_visual                              = anomaly_weapons\wpn_steyr_scout\wpn_steyr_scout_big_bravo4_hud.ogf                                                                                                           
+                                                                                                                                                                                     aim_hud_offset_pos               = -0.057355, 0.015714, -0.102051
+        aim_hud_offset_pos_16x9          = -0.057355, 0.015714, -0.102051
+        aim_hud_offset_rot               = 0.003692, -0.023775, -0.0875
+        aim_hud_offset_rot_16x9          = 0.003692, -0.023775, -0.0875
+		
+        aim_hud_offset_alt_pos           = -0.058171, -0.025452, -0.069351
+        aim_hud_offset_alt_pos_16x9      = -0.058171, -0.025452, -0.069351
+        aim_hud_offset_alt_rot           = -0.001911, -0.020515, -0.0875
+        aim_hud_offset_alt_rot_16x9      = -0.001911, -0.020515, -0.0875
 		
         hands_orientation                = -1.147605, -0.045865, -5
         hands_orientation_16x9           = -1.147605, -0.045865, -5
@@ -390,8 +399,8 @@ zoom_rotate_time                         = 0.25
 
 [wpn_steyr_scout_leupold_hud]:wpn_steyr_scout_hud
 item_visual                              = anomaly_weapons\wpn_steyr_scout\wpn_steyr_scout_big_leupold_hud.ogf
-        aim_hud_offset_pos               = -0.059573, 0.019257, -0.052189
-        aim_hud_offset_pos_16x9          = -0.059573, 0.019257, -0.052189
+        aim_hud_offset_pos               = -0.059573, 0.019257, -0.045089
+        aim_hud_offset_pos_16x9          = -0.059573, 0.019257, -0.045089
         aim_hud_offset_rot               = 0.003633, -0.02362, -0.0875
         aim_hud_offset_rot_16x9          = 0.003633, -0.02362, -0.0875
 		
@@ -421,13 +430,13 @@ zoom_rotate_time                         = 0.25
 use_alt_aim_hud                  = true
 [wpn_steyr_scout_mark8_rmr_hud]:wpn_steyr_scout_hud
 item_visual                              = anomaly_weapons\wpn_steyr_scout\wpn_steyr_scout_big_mark8_rmr_hud.ogf
-        aim_hud_offset_alt_pos           = -0.060309, -0.020587, -0.050716
-        aim_hud_offset_alt_pos_16x9      = -0.060309, -0.020587, -0.050716
-        aim_hud_offset_alt_rot           = 0.016019, -0.019244, -0.0875
-        aim_hud_offset_alt_rot_16x9      = 0.016019, -0.019244, -0.0875
+        aim_hud_offset_alt_pos           = -0.060044, -0.025131, -0.050716
+        aim_hud_offset_alt_pos_16x9      = -0.060044, -0.025131, -0.050716
+        aim_hud_offset_alt_rot           = -0.00061, -0.020475, -0.0875
+        aim_hud_offset_alt_rot_16x9      = -0.00061, -0.020475, -0.0875
 		
-        aim_hud_offset_pos               = -0.059573, 0.019257, -0.052189
-        aim_hud_offset_pos_16x9          = -0.059573, 0.019257, -0.052189
+        aim_hud_offset_pos               = -0.059573, 0.019257, -0.045089
+        aim_hud_offset_pos_16x9          = -0.059573, 0.019257, -0.045089
         aim_hud_offset_rot               = 0.003633, -0.02362, -0.0875
         aim_hud_offset_rot_16x9          = 0.003633, -0.02362, -0.0875
 		
@@ -458,15 +467,15 @@ zoom_rotate_time                         = 0.25
 use_alt_aim_hud                  = true
 [wpn_steyr_scout_marchf_hud]:wpn_steyr_scout_hud
 item_visual                              = anomaly_weapons\wpn_steyr_scout\wpn_steyr_scout_big_marchf_hud.ogf
-        aim_hud_offset_alt_pos           = -0.055746, -0.032839, -0.047219
-        aim_hud_offset_alt_pos_16x9      = -0.055746, -0.032839, -0.047219
-        aim_hud_offset_alt_rot           = -0.043223, -0.03783, -0.0875
-        aim_hud_offset_alt_rot_16x9      = -0.043223, -0.03783, -0.0875
+        aim_hud_offset_alt_pos           = -0.06032, -0.017573, -0.047219
+        aim_hud_offset_alt_pos_16x9      = -0.06032, -0.017573, -0.047219
+        aim_hud_offset_alt_rot           = -0.002624, -0.020239, -0.0875
+        aim_hud_offset_alt_rot_16x9      = -0.002624, -0.020239, -0.0875
 		
-        aim_hud_offset_pos               = -0.059902, 0.019206, -0.079135
-        aim_hud_offset_pos_16x9          = -0.059902, 0.019206, -0.079135
-        aim_hud_offset_rot               = 0.003999, -0.023095, -0.0875
-        aim_hud_offset_rot_16x9          = 0.003999, -0.023095, -0.0875
+        aim_hud_offset_pos               = -0.05985, 0.019206, -0.071677
+        aim_hud_offset_pos_16x9          = -0.05985, 0.019206, -0.071677
+        aim_hud_offset_rot               = 0.003837, -0.023798, -0.0875
+        aim_hud_offset_rot_16x9          = 0.003837, -0.023798, -0.0875
 		
         hands_orientation                = -1.147605, -0.045865, -5
         hands_orientation_16x9           = -1.147605, -0.045865, -5
@@ -524,15 +533,15 @@ zoom_rotate_time                         = 0.25
 use_alt_aim_hud                  = true
 [wpn_steyr_scout_march_f_shorty_alt_hud]:wpn_steyr_scout_hud
 item_visual                              = anomaly_weapons\wpn_steyr_scout\wpn_steyr_scout_big_march_f_shorty_alt_hud.ogf
-        aim_hud_offset_alt_pos           = -0.074463, -0.0552, -0.053311
-        aim_hud_offset_alt_pos_16x9      = -0.074463, -0.0552, -0.053311
-        aim_hud_offset_alt_rot           = -0.026663, -0.017693, 0.35
-        aim_hud_offset_alt_rot_16x9      = -0.026663, -0.017693, 0.35
+        aim_hud_offset_alt_pos           = -0.078181, -0.048029, -0.053311
+        aim_hud_offset_alt_pos_16x9      = -0.078181, -0.048029, -0.053311
+        aim_hud_offset_alt_rot           = -0.003487, -0.017148, 0.35
+        aim_hud_offset_alt_rot_16x9      = -0.003487, -0.017148, 0.35
 		
-        aim_hud_offset_pos               = -0.060754, 0.020314, -0.065354
-        aim_hud_offset_pos_16x9          = -0.060754, 0.020314, -0.065354
-        aim_hud_offset_rot               = 0.001787, -0.02137, -0.0875
-        aim_hud_offset_rot_16x9          = 0.001787, -0.02137, -0.0875
+        aim_hud_offset_pos               = -0.060754, 0.020026, -0.050816
+        aim_hud_offset_pos_16x9          = -0.060754, 0.020026, -0.050816
+        aim_hud_offset_rot               = 0.001248, -0.021292, -0.0875
+        aim_hud_offset_rot_16x9          = 0.001248, -0.021292, -0.0875
 		
         hands_orientation                = -1.015768, -0.183519, -5
         hands_orientation_16x9           = -1.015768, -0.183519, -5
@@ -559,13 +568,13 @@ zoom_rotate_time                         = 0.25
 
 [wpn_steyr_scout_razorhd_hud]:wpn_steyr_scout_hud
 item_visual                              = anomaly_weapons\wpn_steyr_scout\wpn_steyr_scout_big_razorhd_hud.ogf
-        aim_hud_offset_alt_pos           = -0.060466, -0.024065, -0.059734
-        aim_hud_offset_alt_pos_16x9      = -0.060466, -0.024065, -0.059734
-        aim_hud_offset_alt_rot           = 0.006506, -0.018458, -0.0875
-        aim_hud_offset_alt_rot_16x9      = 0.006506, -0.018458, -0.0875
+        aim_hud_offset_alt_pos           = -0.060413, -0.026266, -0.059734
+        aim_hud_offset_alt_pos_16x9      = -0.060413, -0.026266, -0.059734
+        aim_hud_offset_alt_rot           = -0.002014, -0.020101, -0.0875
+        aim_hud_offset_alt_rot_16x9      = -0.002014, -0.020101, -0.0875
 		
-        aim_hud_offset_pos               = -0.05969, 0.019436, -0.059734
-        aim_hud_offset_pos_16x9          = -0.05969, 0.019436, -0.059734
+        aim_hud_offset_pos               = -0.05969, 0.019436, -0.057469
+        aim_hud_offset_pos_16x9          = -0.05969, 0.019436, -0.057469
         aim_hud_offset_rot               = 0.00368, -0.023961, -0.0875
         aim_hud_offset_rot_16x9          = 0.00368, -0.023961, -0.0875
 		
